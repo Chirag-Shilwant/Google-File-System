@@ -1,5 +1,5 @@
 # Google-File-System
-Implementing Google File System in Python 3
+Working model of Google File System from it's Research paper in Python 3
 
 ### How to Run :
 - In one terminal, run **python3 Master_Server.py** to start master server.
