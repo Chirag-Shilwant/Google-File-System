@@ -41,7 +41,6 @@ python3 Client.py
 - There will also be **3 duplicate replicas for each chunk of a file** which will be stored in seperate chunk servers. This is done so as to **increase data availablity** to the client.
 - **Master Server will only hold the Metadata of all the chunks of the files** which will be used by clients and chunkservers to communicate with the appropriate chunkserver. Hence there is no issue of Master Server being overloaded.
 - As **Master Server is a single point of failure, hence we have a Backup Master Server making the system more reliable**.
-- A **log_file.txt** will also be maintained which would store history of all operations. **This log file can be used by Master Server to recover to current state after failure**.
 - To check the list of active chunk servers, **a thread is created in the Master Server which after every 6 seconds will try to connect to all 4 chunk servers and display list of active chunkservers out of them.**
 
 ### Miscellaneous Details:
